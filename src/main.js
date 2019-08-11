@@ -48,3 +48,31 @@ buttonMoreProducts.addEventListener("click", () => {
     getProducts("https://" + nextPage);
 });
 
+//Name and E-mail validation functions//
+function emailCheck(){
+    const inputEmail = document.getElementById("email");
+    const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(!inputEmail.value.match(emailRegExp)){
+        inputEmail.classList.add("inputError");
+      }  
+      else{
+          inputEmail.classList.remove("inputError");
+      }
+};
+
+function nameCheck(){
+    const inputName = document.getElementById("name");
+    const nameRegExp = /^[A-Za-z].{2}$/;
+    if(!inputName.value.match(nameRegExp)){
+        inputName.classList.add("inputError");
+      }  
+      else{
+          inputName.classList.remove("inputError");
+      }
+};
+
+const buttonSendNow = document.querySelector(".sendNow");
+buttonSendNow.addEventListener("click", () => {
+    nameCheck();
+    emailCheck();
+});

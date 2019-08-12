@@ -21,6 +21,13 @@ function addToGrid(response){
         const elInstallments = document.createElement("p");
         const buyButton = document.createElement("button");
         elImg.setAttribute("src", "http:" + productImage);
+        elImg.classList.add("productImg");
+        elName.classList.add("productName", "productText");
+        elDescription.classList.add("productText");
+        elOldPrice.classList.add("productText");
+        elPrice.classList.add("productPrice", "productText");
+        elInstallments.classList.add("productText");
+        buyButton.classList.add("productBuyButton", "buttonText");
         elName.innerText = productName;
         elDescription.innerText = productDescription;
         elOldPrice.innerText = "De: R$" + productOldPrice;

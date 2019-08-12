@@ -8,26 +8,42 @@
     <title>Desafio | Frontend Developer</title>
 </head>
 <body>
-    <header>
-
+    <header class="header-page">
+        <p class="p1">uma seleção de produtos</p>
+        <p class="p2">especial para você</p>
+        <h1 class="p3">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h1>
+        <nav class="navBar">
+            <a class="navLink" href="#"><p class="navP">Conheça a Linx</p></a>
+            <a class="navLink" href="#"><p class="navP">Ajude o algorítimo</p></a>
+            <a class="navLink" href="#"><p class="navP">Seus produtos</p></a>
+            <a class="navLink" href="#"><p class="navP">Compartilhe</p></a>
+        </nav>
     </header>
-    <div class="productGrid">
 
-    </div>
-    <button class="moreProducts">Ainda mais produtos aqui!</button>
+    <section>
+        <h2 class="sectionTitle">Sua seleção especial</h2>
+        <div class="productGrid">
+        </div>
+        <button class="moreProducts buttonText">Ainda mais produtos aqui!</button>
+    </section>
 
-    <div class="newsletter">
-    <form>
-        <label for="name" class="label">Nome do seu amigo:</label>
-        <input id="name" class="input" type="text" required minlength = "1"></input>
+    <section class="newsletter">
+        <h2 class="sectionTitle">Compartilhe a novidade</h2>
+        <p class="SectionSubTitle sectionTitle">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+        <form class="formContainer"> 
+            <label for="name" class="productText">Nome do seu amigo:</label>
+            <label for="email" class="productText">E-mail:</label>
+            
+            <input id="name" class="input" type="text" required minlength = "1"></input>
+            <input id="email" class="input" type="email" required></input>
+        </form>
+        <button class="sendNow buttonText">Enviar agora</button>
+    </section>
 
-        <label for="email" class="label">E-mail:</label>
-        <input id="email" class="input" type="email" required></input>
-    </form>
-    <button class="sendNow">Enviar agora</button>
-    </div>
-    <footer>
-
+    <footer class="footer-page">
+        <p>Testando suas habilidades em HTML, CSS e JS.</p>
+        <p>Linx Impulse</p>
+        <p>2019</p>
     </footer>
     <script src="src/main.js"></script>    
 </body>
